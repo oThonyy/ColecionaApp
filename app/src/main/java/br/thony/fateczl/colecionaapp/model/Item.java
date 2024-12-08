@@ -80,14 +80,12 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
-                "id=" + id +
-                ", colecao='" + colecao.getNome() + '\'' +
-                ", nome='" + nome + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", condicao='" + condicao + '\'' +
-                ", valorEstimado='" + valorEstimado + '\'' +
-                ", dataAquisicao='" + dataAquisicao + '\'' +
-                '}';
+        return id +
+                " | " + colecao.getNome() +
+                " | " + nome +
+                " | " + descricao +
+                " | " + condicao +
+                " | " + valorEstimado +
+                " | " + dataAquisicao + "\n";
     }
 }

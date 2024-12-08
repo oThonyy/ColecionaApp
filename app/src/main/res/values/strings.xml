@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ColecionaApp</string>
+    <string name="app_name">Coleciona App</string>
 
     <string name="idColecao">Id da Coleção</string>
     <string name="nome">Nome</string>
@@ -24,6 +24,4 @@
     <string name="colecao">Coleção</string>
     <string name="item">Item</string>
     <string name="inicio">Início</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

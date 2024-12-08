@@ -121,9 +121,11 @@
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="55dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#43A047"
         android:text="@string/btnEditar"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarColecao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnExcluiColecao"
         app:layout_constraintTop_toBottomOf="@+id/btnInsereColecao" />
@@ -135,9 +137,11 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="112dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#E53935"
         android:text="@string/btnExcluir"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarColecao"
         app:layout_constraintEnd_toStartOf="@+id/btnEditaColecao"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnListaColecao" />
@@ -157,18 +161,16 @@
 
     <TextView
         android:id="@+id/tvListarColecao"
-        android:layout_width="392dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="393dp"
+        android:layout_height="243dp"
         android:layout_marginBottom="7dp"
         android:importantForAutofill="no"
         android:scrollbars="vertical"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEditaColecao"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvTituloColecao"

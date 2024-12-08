@@ -59,10 +59,10 @@ public class Colecao {
 
     @Override
     public String toString() {
-        return "id = " + id +
-                "\nnome = " + nome +
-                "\ndescricao = " + descricao +
-                "\ncategoria = " + categoria +
-                "\ndataCriacao = " + dataCriacao + "\n";
+        return id +
+                " | " + nome +
+                " | " + descricao +
+                " | " + categoria +
+                " | " + dataCriacao + "\n";
     }
 }
