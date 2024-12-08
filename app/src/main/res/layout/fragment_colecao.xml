@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentColecao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColecaoFragment">
+
+    <EditText
+        android:id="@+id/etIdColecao"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/idColecao"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/bntBuscarColecao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bntBuscarColecao"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bntBuscarColecao"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bntBuscarColecao"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="356dp"
+        android:backgroundTint="#000000"
+        android:text="@string/btnBuscar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarColecao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etIdColecao"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloColecao" />
+
+    <EditText
+        android:id="@+id/etDescricaoColecao"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/descricao"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeColecao" />
+
+    <EditText
+        android:id="@+id/etDataCriacaoColecao"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/dataCriacao"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCategoriaColecao" />
+
+    <EditText
+        android:id="@+id/etCategoriaColecao"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/categoria"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDescricaoColecao" />
+
+    <EditText
+        android:id="@+id/etNomeColecao"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIdColecao" />
+
+    <Button
+        android:id="@+id/btnListaColecao"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="112dp"
+        android:backgroundTint="#FB8C00"
+        android:text="@string/btnListar"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnInsereColecao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataCriacaoColecao" />
+
+    <Button
+        android:id="@+id/btnEditaColecao"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="55dp"
+        android:backgroundTint="#43A047"
+        android:text="@string/btnEditar"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnExcluiColecao"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsereColecao" />
+
+    <Button
+        android:id="@+id/btnExcluiColecao"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="112dp"
+        android:backgroundTint="#E53935"
+        android:text="@string/btnExcluir"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditaColecao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListaColecao" />
+
+    <Button
+        android:id="@+id/btnInsereColecao"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="55dp"
+        android:backgroundTint="#3949AB"
+        android:text="@string/btnInserir"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnListaColecao"
+        app:layout_constraintTop_toBottomOf="@+id/etDataCriacaoColecao" />
+
+    <TextView
+        android:id="@+id/tvListarColecao"
+        android:layout_width="392dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp"
+        android:importantForAutofill="no"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditaColecao"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTituloColecao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:text="@string/colecao"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

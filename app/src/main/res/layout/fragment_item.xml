@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemFragment">
+
+    <TextView
+        android:id="@+id/tvTituloColecao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:text="@string/item"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeItem"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etDescricaoItem"
+        app:layout_constraintEnd_toEndOf="@+id/etDescricaoItem"
+        app:layout_constraintStart_toStartOf="@+id/etDescricaoItem"
+        app:layout_constraintTop_toBottomOf="@+id/etIdItem" />
+
+    <EditText
+        android:id="@+id/etDataAquisicaoItem"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/dataAquisicao"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/spColecaoItem"
+        app:layout_constraintEnd_toEndOf="@+id/spColecaoItem"
+        app:layout_constraintStart_toStartOf="@+id/spColecaoItem"
+        app:layout_constraintTop_toBottomOf="@+id/etValorEstimadoItem" />
+
+    <EditText
+        android:id="@+id/etValorEstimadoItem"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/valorEstimado"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etDataAquisicaoItem"
+        app:layout_constraintEnd_toEndOf="@+id/etDataAquisicaoItem"
+        app:layout_constraintStart_toStartOf="@+id/etDataAquisicaoItem"
+        app:layout_constraintTop_toBottomOf="@+id/etCondicaoItem" />
+
+    <Button
+        android:id="@+id/bntBuscarItem"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:text="@string/btnBuscar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etNomeItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etIdItem"
+        app:layout_constraintTop_toTopOf="@+id/etIdItem" />
+
+    <EditText
+        android:id="@+id/etIdItem"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/idColecao"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etNomeItem"
+        app:layout_constraintEnd_toStartOf="@+id/bntBuscarItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloColecao2" />
+
+    <EditText
+        android:id="@+id/etDescricaoItem"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/descricao"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etCondicaoItem"
+        app:layout_constraintEnd_toEndOf="@+id/etCondicaoItem"
+        app:layout_constraintStart_toStartOf="@+id/etCondicaoItem"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeItem" />
+
+    <EditText
+        android:id="@+id/etCondicaoItem"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/condicao"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/etValorEstimadoItem"
+        app:layout_constraintEnd_toEndOf="@+id/etValorEstimadoItem"
+        app:layout_constraintStart_toStartOf="@+id/etValorEstimadoItem"
+        app:layout_constraintTop_toBottomOf="@+id/etDescricaoItem" />
+
+    <Spinner
+        android:id="@+id/spColecaoItem"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnExcluiItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataAquisicaoItem" />
+
+    <Button
+        android:id="@+id/btnEditaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#43A047"
+        android:text="@string/btnEditar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarItem"
+        app:layout_constraintEnd_toStartOf="@+id/btnInsereItem"
+        app:layout_constraintStart_toEndOf="@+id/btnListaItem"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloColecao2" />
+
+    <Button
+        android:id="@+id/btnListaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FB8C00"
+        android:text="@string/btnListar"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnEditaItem"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditaItem"
+        app:layout_constraintStart_toEndOf="@+id/btnExcluiItem" />
+
+    <Button
+        android:id="@+id/btnInsereItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#3949AB"
+        android:text="@string/btnInserir"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEditaItem"
+        app:layout_constraintTop_toTopOf="@+id/btnEditaItem" />
+
+    <Button
+        android:id="@+id/btnExcluiItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#E53935"
+        android:text="@string/btnExcluir"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarItem"
+        app:layout_constraintEnd_toStartOf="@+id/btnListaItem"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spColecaoItem" />
+
+    <TextView
+        android:id="@+id/tvListarItem"
+        android:layout_width="392dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditaItem" />
+</androidx.constraintlayout.widget.ConstraintLayout>

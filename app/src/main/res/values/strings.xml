@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ColecionaApp</string>
+
+    <string name="idColecao">Id da Coleção</string>
+    <string name="nome">Nome</string>
+    <string name="descricao">Descrição</string>
+    <string name="categoria">Categoria</string>
+    <string name="dataCriacao">Data de Criação</string>
+
+    <string name="lblInicio">Penis</string>
+
+    <string name="idItem">Id do Item</string>
+    <string name="spColecao">Tipo de Coleção</string>
+    <string name="condicao">Condição</string>
+    <string name="valorEstimado">Valor Estimado</string>
+    <string name="dataAquisicao">Data de Aquisição</string>
+
+    <string name="btnInserir">Inserir</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnEditar">Editar</string>
+    <string name="btnListar">Listar</string>
+    <string name="btnExcluir">Excluir</string>
+
+    <string name="colecao">Coleção</string>
+    <string name="item">Item</string>
+    <string name="inicio">Início</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
